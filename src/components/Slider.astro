@@ -1,0 +1,73 @@
+---
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+---
+
+<!-- Slider main container -->
+<div class="py-10 ">
+  <h2 class="text-center font-medium lg:text-3xl text-2xl text-orange-50 px-2" id="clientes">El lugar perfecto para disfrutar en familia y con amigos</h2>
+  <div class="swiper max-w-7xl my-10" id="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+
+      <div class="swiper-slide">
+        <img src="cliente1.webp" class=" w-[400px] rounded-md lg:w-[600px] mx-auto" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="cliente2.webp" class=" w-[400px] rounded-md lg:w-[600px] mx-auto" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="cliente3.webp" class=" w-[400px] rounded-md lg:w-[600px] mx-auto" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="cliente4.webp" class=" w-[400px] rounded-md lg:w-[600px] mx-auto" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="cliente5.webp" class=" w-[400px] rounded-md lg:w-[600px] mx-auto" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="cliente6.webp" class=" w-[400px] rounded-md lg:w-[600px] mx-auto" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="cliente7.webp" class=" w-[400px] rounded-md lg:w-[600px] mx-auto" alt="">
+      </div>
+  
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
+
+
+<script>
+  import 'swiper/css';
+  import { Navigation, Pagination } from 'swiper/modules'
+  import Swiper from 'swiper';
+  const swiper = new Swiper('.swiper', {
+    modules: [Navigation, Pagination],
+  // Optional parameters
+  direction: 'horizontal',
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+
+});
+
+</script>

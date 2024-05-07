@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title-section {
+  @apply text-orange-50 font-medium text-3xl text-center
+}

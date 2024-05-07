@@ -1,0 +1,56 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Aroma Cafe Pizzería ofrece una amplia carta para que disfrutes con familia y amigos de la mejor pizza, lasaña, sánduchues, nachos, creeps y mucho más, se encuentra ubicado en las ciudades de Ibarra y Atuntaqui " />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/png" href="/favicon-10.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+		<meta property="og:title" content="Aroma Café & Pizzería Ibarra, Atuntaqui" />
+    <meta property="og:description" content="Aroma Café y Pizzería es un rincón acogedor donde podrás disfrutar de una amplia variedad de delicias culinarias. Ofrecemos pizzas artesanales con ingredientes frescos y sabores únicos, nachos crujientes con salsas caseras, y lasañas gratinadas que te harán sentir como en casa"/>
+    <meta property="og:url" content="https://aromacafeteria.com"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://storage.googleapis.com/bucket-jsn/aroma-300.png"/>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+<style is:global>
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: system-ui, sans-serif;
+		background: #13151a;
+		background-size: 224px;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+</style>
