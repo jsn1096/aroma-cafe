@@ -1,9 +1,11 @@
 ---
 interface Props {
 	title: string;
+	ogimage: string;
 }
 
 const { title } = Astro.props;
+const { ogimage } = Astro.props;
 ---
 
 <!doctype html>
@@ -19,7 +21,7 @@ const { title } = Astro.props;
     <meta property="og:description" content="Aroma Café y Pizzería es un rincón acogedor donde podrás disfrutar de una amplia variedad de delicias culinarias. Ofrecemos pizzas artesanales con ingredientes frescos y sabores únicos, nachos crujientes con salsas caseras, y lasañas gratinadas que te harán sentir como en casa"/>
     <meta property="og:url" content="https://aromacafeteria.com"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="https://storage.googleapis.com/bucket-jsn/aromacafeteriapng.PNG"/>
+    <meta property="og:image" content={ogimage}/>
 	</head>
 	<body>
 		<slot />
