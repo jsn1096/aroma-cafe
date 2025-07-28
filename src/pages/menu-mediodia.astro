@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Menú Aroma Cafe & Pizzería" ogimage="/default-ogimage.webp">
+  <!-- Menu mobile -->
+  <div class="lg:hidden">
+    <img src="md-0.webp" alt="page1" />
+    <img src="md-1.webp" alt="page1" />
+    <img src="md-2.webp" alt="page2" />
+    <img src="md-3.webp" alt="page3" />
+    <img src="md-4.webp" alt="page4" />
+    <img src="md-5.webp" alt="page5" />
+    <img src="md-6.webp" alt="page6" />
+    <img src="md-7.webp" alt="page7" />
+  </div>
+
+  <!-- Menu desktop -->
+  <div class="hidden lg:block">
+    <div class="mx-auto max-w-[1100px] grid grid-cols-2 gap-y-5">
+      <img src="md-0.webp" class="w-[550px]" alt="page1" />
+      <img src="md-1.webp" class="w-[550px]" alt="page2" />
+      <img src="md-2.webp" class="w-[550px]" alt="page3" />
+      <img src="md-3.webp" class="w-[550px]" alt="page4" />
+      <img src="md-4.webp" class="w-[550px]" alt="page5" />
+      <img src="md-5.webp" class="w-[550px]" alt="page6" />
+      <img src="md-6.webp" class="w-[550px]" alt="page7" />
+      <img src="md-7.webp" class="w-[550px]" alt="page8" />
+    </div>
+  </div>
+</Layout>
